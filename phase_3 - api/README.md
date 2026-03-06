@@ -93,3 +93,46 @@ The application provides the following main endpoints:
 ## FastAPI docs access:
 `http://127.0.0.1:8000/docs`
 
+## Details about Mappings from MongoDB to API
+
+This section describes how the data stored in MongoDB is exposed and filtered through the FastAPI-based web service. These mappings are essential for the frontend team to correctly request and display data on the official website.
+
+The **"MongoDB to API"** documentation provides a detailed view of every entity available in the system.
+
+### Entity-to-Filter Mapping
+
+For each MongoDB collection, the documentation lists:
+
+- The corresponding **Entity name** used by the API  
+- The available **Filter Names** that can be used for querying the data
+
+### Standardized Schema
+
+Most entities follow a consistent filtering schema to ensure predictability and uniform behavior across the API.
+
+### Special Cases & Exceptions
+
+Some entities require specific handling:
+
+- **Visual Object Entity**  
+  Includes custom logic for:
+  - normal text search
+  - proximity text search  
+  These differ from the standard filtering system.
+
+- **Entity-Relationship Graphs**  
+  These are mapped using a different structural approach to handle the complexity of graph-based data.
+
+### Implementation Examples
+
+To simplify the integration process, the documentation includes **cURL request examples** for each entity. These examples demonstrate how the extracted fields and filters are structured in real API requests.
+
+### Testing the API
+
+For real-time testing and interactive exploration of these mappings, developers should refer to the **FastAPI `/docs` interface (Swagger UI)**.
+
+This interface allows developers to:
+
+- test endpoints directly  
+- inspect request schemas  
+- validate request bodies defined in the Excel documentation
