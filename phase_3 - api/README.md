@@ -93,7 +93,7 @@ The application provides the following main endpoints:
 ## FastAPI docs access:
 `http://127.0.0.1:8000/docs`
 
-## Details about Mappings from MongoDB to API
+## Details about Mappings from MongoDB to API (details in MongoDB to API.xlsx)
 
 This section describes how the data stored in MongoDB is exposed and filtered through the FastAPI-based web service. These mappings are essential for the frontend team to correctly request and display data on the official website.
 
@@ -136,3 +136,4 @@ This interface allows developers to:
 - test endpoints directly  
 - inspect request schemas  
 - validate request bodies defined in the Excel documentation
+
