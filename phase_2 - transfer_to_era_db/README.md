@@ -111,3 +111,20 @@ The `recipe.toml` file contains all the configuration needed for processing:
 - The script uses multithreading to speed up the processing of entities and relations, making it suitable for larger datasets.
 - It handles authentication securely using bearer tokens, which are reused for subsequent API requests.
 - The progress bars provide real-time status updates to indicate the completion of various stages in entity and relation creation.
+
+## Additional Details about Mappings from Excel to MongoDB
+
+This section describes how raw data from the project spreadsheets is translated into our structured MongoDB database.
+
+To ensure data integrity and traceability, the mappings are organized into two main sheets within the **`Excel to MongoDB mappings`** file:
+
+### Column-to-Collection Mappings
+
+This sheet provides the direct connection between the source Excel files supplied by **Eleonora** and **Agnese** and the database. It specifies exactly which Excel columns map to which MongoDB collections, ensuring that each data point has a clearly defined destination.
+
+### Entity Relationships
+
+This sheet documents the relational logic between mapped columns. It explains how data points are linked across different sheets and collections, preserving the network of relationships required by the project.
+
+  
+
