@@ -112,7 +112,7 @@ The `recipe.toml` file contains all the configuration needed for processing:
 - It handles authentication securely using bearer tokens, which are reused for subsequent API requests.
 - The progress bars provide real-time status updates to indicate the completion of various stages in entity and relation creation.
 
-## Additional Details about Mappings from Excel to MongoDB
+## Additional Details about Mappings from Excel to MongoDB (details in Excel to MongoDB mappings.xlsx)
 
 This section describes how raw data from the project spreadsheets is translated into our structured MongoDB database.
 
@@ -127,4 +127,5 @@ This sheet provides the direct connection between the source Excel files supplie
 This sheet documents the relational logic between mapped columns. It explains how data points are linked across different sheets and collections, preserving the network of relationships required by the project.
 
   
+
 
