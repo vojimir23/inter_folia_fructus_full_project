@@ -1,1 +1,0 @@
-{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"c285d6529f5c47a9b61192a9989f8e2d","collectionName":"refreshtokens","type":"collection"}
